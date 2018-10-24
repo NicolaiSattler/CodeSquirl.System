@@ -1,0 +1,9 @@
+C:\Users\NicolaiSättler\Documents\Privé\CodeSquirl\CodeSquirl.System\bin\Debug\netcoreapp2.0\CodeSquirl.System.deps.json
+C:\Users\NicolaiSättler\Documents\Privé\CodeSquirl\CodeSquirl.System\bin\Debug\netcoreapp2.0\CodeSquirl.System.dll
+C:\Users\NicolaiSättler\Documents\Privé\CodeSquirl\CodeSquirl.System\bin\Debug\netcoreapp2.0\CodeSquirl.System.pdb
+C:\Users\NicolaiSättler\Documents\Privé\CodeSquirl\CodeSquirl.System\obj\Debug\netcoreapp2.0\CodeSquirl.System.csprojAssemblyReference.cache
+C:\Users\NicolaiSättler\Documents\Privé\CodeSquirl\CodeSquirl.System\obj\Debug\netcoreapp2.0\CodeSquirl.System.csproj.CoreCompileInputs.cache
+C:\Users\NicolaiSättler\Documents\Privé\CodeSquirl\CodeSquirl.System\obj\Debug\netcoreapp2.0\CodeSquirl.System.AssemblyInfoInputs.cache
+C:\Users\NicolaiSättler\Documents\Privé\CodeSquirl\CodeSquirl.System\obj\Debug\netcoreapp2.0\CodeSquirl.System.AssemblyInfo.cs
+C:\Users\NicolaiSättler\Documents\Privé\CodeSquirl\CodeSquirl.System\obj\Debug\netcoreapp2.0\CodeSquirl.System.dll
+C:\Users\NicolaiSättler\Documents\Privé\CodeSquirl\CodeSquirl.System\obj\Debug\netcoreapp2.0\CodeSquirl.System.pdb
