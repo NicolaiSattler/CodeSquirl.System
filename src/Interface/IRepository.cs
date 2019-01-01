@@ -6,17 +6,12 @@ using System.Threading.Tasks;
 
 namespace CodeSquirl.System
 {
-    public interface IRepository
+    public interface IRepository<T> where T : class
     {
-        void Add<T>(T entity) where T : class;
-        void AddRange<T>(IEnumerable<T> entities) where T : class;
-        bool Remove<T>(T entiy) where T : class;
-        int Remove<T>(Func<T, bool> predecate) where T : class;
-        IQueryable<T> Get<T>() where T : class;
-        IQueryable<T> Get<T>(Func<T, bool> predicate) where T : class;
-        bool Update<T>(T entity) where T : class;
-        int SaveChanges();
-        Task<int> SaveChangesAsync();
-        Task<int> SaveChangesAsync(CancellationToken token);
+        bool Add(T entity);
+        void AddRange(IEnumerable<T> entities);
+        bool Remove(T entiy);
+        IList<T> GetAll();
+        bool Update(T entity);
     }
 }

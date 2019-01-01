@@ -6,7 +6,6 @@ namespace CodeSquirl.System
     {
         protected override void Load(ContainerBuilder builder)
         {
-            builder.RegisterType<IRepository>();
             builder.RegisterType<IEntity>().As<Entity>();
         }
     }
