@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 
-namespace CodeSquirl.System
+namespace CodeSquirrel.System
 {
     public class Entity : IEntity
     {

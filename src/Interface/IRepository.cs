@@ -1,17 +1,19 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace CodeSquirl.System
+namespace CodeSquirrel.System
 {
     public interface IRepository<T> where T : class
     {
         bool Add(T entity);
-        void AddRange(IEnumerable<T> entities);
-        bool Remove(T entiy);
-        IList<T> GetAll();
+        bool AddRange(IEnumerable<T> entities);
         bool Update(T entity);
+        bool Remove(Guid uniqueID);
+        T GetByID(Guid uniqueID);
+        IList<T> Get();
     }
 }

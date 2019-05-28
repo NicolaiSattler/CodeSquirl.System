@@ -1,6 +1,6 @@
 using Autofac;
 
-namespace CodeSquirl.System
+namespace CodeSquirrel.System
 {
     public class ModelModule : Module
     {

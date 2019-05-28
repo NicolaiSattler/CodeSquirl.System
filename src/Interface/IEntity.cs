@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace CodeSquirl.System
+namespace CodeSquirrel.System
 {
     public interface IEntity : ICloneable
     {

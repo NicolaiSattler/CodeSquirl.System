@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace CodeSquirl.System
+namespace CodeSquirrel.System
 {
     public interface IEFRepository<T> : IRepository<T> where T : class
     {
