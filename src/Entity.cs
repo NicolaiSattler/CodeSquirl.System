@@ -2,7 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.IO;
+using System.Runtime.Serialization;
 using System.Runtime.Serialization.Formatters.Binary;
+using System.Text.Json;
 
 namespace CodeSquirrel.System
 {
@@ -18,10 +20,13 @@ namespace CodeSquirrel.System
         public Guid UniqueID { get => _uniqueID; set => _uniqueID = value; }
         public bool Deleted { get => _deleted; set => _deleted = value; }
 
-        public Entity()
+        protected Entity(SerializationInfo info, StreamingContext context)
         {
-            
+            ID = (int)info.GetValue(nameof(ID), typeof(int));
+            UniqueID = (Guid)info.GetValue(nameof(UniqueID), typeof(Guid));
+            Deleted = (bool)info.GetValue(nameof(Deleted), typeof(bool));
         }
+        public Entity() { }
 
         public object Clone()
         {
@@ -39,13 +44,8 @@ namespace CodeSquirrel.System
                 return default(T);
             }
 
-            var formatter = new BinaryFormatter();
-            using (var stream = new MemoryStream())
-            {
-                formatter.Serialize(stream, source);
-                stream.Seek(0, SeekOrigin.Begin);
-                return (T)formatter.Deserialize(stream);
-            }
+            var json = JsonSerializer.Serialize(source);
+            return JsonSerializer.Deserialize<T>(json);
         }
     }
 }
